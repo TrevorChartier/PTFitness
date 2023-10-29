@@ -191,8 +191,8 @@ def visualize_progress():
         print(f"You have a BMI score of {BMI}\n\n{'-' * 49}")
     else:
         print(f"\n{'-' * 49}")
-
-    make_pie()
+    if calorie_count != 0:
+        make_pie()
 
 
 def make_pie():
